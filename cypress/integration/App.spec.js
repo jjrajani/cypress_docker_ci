@@ -2,11 +2,13 @@
 
 context("App", () => {
   beforeEach(() => {
+    cy.log(process.env);
     cy.visit("http://172.19.0.2:3000");
   });
 
   it("Dispalys the logo", () => {
     cy.get(".App-logo").should("exist");
+    cy.log(process.env);
   });
 
   it("Dispalys the logo", () => {
