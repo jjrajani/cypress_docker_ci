@@ -24,4 +24,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Tests
-        run: docker-compose -f docker-compose-github.yml up -d --build && docker-compose -f docker-compose-github.yml logs -f
+        # run: docker-compose -f docker-compose-github.yml up -d --build && docker-compose -f docker-compose-github.yml logs -f
+        run: docker-compose -f docker-compose-github.yml up cypress

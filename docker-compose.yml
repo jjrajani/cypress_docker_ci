@@ -20,9 +20,9 @@ services:
     entrypoint: "cypress run --config-file ./cypress-docker.json"
     depends_on:
       - hello-world
-    environment:
-      # pass base url to test pointing at the web application
-      - CYPRESS_baseUrl=http://172.19.0.2:3000
+    # environment:
+    #   # pass base url to test pointing at the web application
+    #   - CYPRESS_baseUrl=http://172.19.0.2:3000
     # share the current folder as volume to avoid copying
     working_dir: /e2e
     volumes:

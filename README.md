@@ -37,6 +37,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm test:ui`
+
+Runs cypress tests locally by opening the cypress browser. This script will allow you to watch your tests being run.
+
+### `npm test:ui:run`
+
+Runs cypress tests locally in a silent browser. You will not be able to see the tests run but will see test status output to your terminal
+
+### `docker:build`
+
+Builds a docker image on your machine.
+
+### `docker:run`
+
+Starts the docker image on your machine and attaches log output to your terminal.
+
+### `docker:stop`
+
+Stops the running docker images on your machine.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
