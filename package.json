@@ -14,7 +14,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:ui": "cypress open",
+    "test:ui:run": "cypress run",
+    "eject": "react-scripts eject",
+    "docker:build": "docker build -t hello-world:dev .",
+    "docker:run": "docker-compose up -d --build && docker-compose logs -f",
+    "docker:stop": "docker-compose stop"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^4.12.1"
   }
 }
