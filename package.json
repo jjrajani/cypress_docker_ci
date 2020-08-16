@@ -14,7 +14,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:ui": "cypress open",
+    "test:ui": "cypress open --config-file ./cypress.json",
     "test:ui:run": "cypress run",
     "eject": "react-scripts eject",
     "docker:build": "docker build -t hello-world:dev .",

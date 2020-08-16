@@ -2,21 +2,11 @@
 
 context("App", () => {
   beforeEach(() => {
-    cy.log(process.env);
-    cy.visit("http://172.19.0.2:3000");
+    cy.visit("/");
   });
 
   it("Dispalys the logo", () => {
     cy.get(".App-logo").should("exist");
-    cy.log(process.env);
-  });
-
-  it("Dispalys the logo", () => {
-    cy.get(".logo").should("exist");
-  });
-
-  it("Dispalys the logo", () => {
-    cy.get(".logo").should("exist");
   });
 
   it("Dispalys a link to react docs", () => {

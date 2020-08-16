@@ -17,6 +17,7 @@ services:
   cypress:
     # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
     image: "cypress/included:4.12.1"
+    entrypoint: "cypress run --config-file ./cypress-docker.json"
     depends_on:
       - hello-world
     environment:
